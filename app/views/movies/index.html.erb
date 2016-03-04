@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+    <h1>Movie Search</h1>
+  </head>
+  <body>
+    <%= render "form" %>
+    <% if @movies %>
+      <% @movies["Search"].each do |m| %>
+      <p><%= m["Title"] %></p>
+      <% end %>
+    <% end %>
+  </body>
+</html>
